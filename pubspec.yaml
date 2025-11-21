@@ -27,6 +27,7 @@ dependencies:
   flutter_facebook_auth: ^6.0.0
   flutter_blue: ^0.8.0
   wifi_scan: ^0.4.1+2
+  webview_flutter: ^4.13.0
 
 
 

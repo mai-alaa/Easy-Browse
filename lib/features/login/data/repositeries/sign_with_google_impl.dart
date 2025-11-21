@@ -13,8 +13,7 @@ class SignWithGoogleImpl implements AuthRepo {
   }
   
   @override
-  Future<User?> signInWithFacebook() {
-    // TODO: implement signInWithFacebook
-    throw UnimplementedError();
+  Future<User?> signInWithFacebook() async {
+    return await authService.signInWithFacebook();
   }
 }

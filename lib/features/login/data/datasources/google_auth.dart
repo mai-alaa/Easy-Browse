@@ -2,7 +2,7 @@ import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-
+import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 class AuthService {
   final FirebaseAuth auth = FirebaseAuth.instance;
   final GoogleSignIn googleSignIn = GoogleSignIn.instance;
@@ -56,6 +56,32 @@ class AuthService {
       return null;
     }
   }
+  // Facebook Sign-In Function for Firebase Authentication
+   Future<User?> signInWithFacebook() async {
+    try {
+      //  Sign in to Facebook
+      final LoginResult result = await FacebookAuth.instance.login();
 
+      if (result.status != LoginStatus.success) {
+        return null;
+      }
+
+      final accessToken = result.accessToken;
+
+      //  Convert Facebook token to Firebase credential
+      final facebookAuthCredential =
+          FacebookAuthProvider.credential(accessToken!.token);
+
+      // Sign in to Firebase
+      final userCredential =
+          await auth.signInWithCredential(facebookAuthCredential);
+
+      return userCredential.user;
+
+    } catch (e) {
+      log("Facebook Sign-in Error: $e");
+      return null;
+    }
+  }
 
 }

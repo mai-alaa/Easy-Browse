@@ -9,7 +9,7 @@ class GoogleAuthCubit extends Cubit<GoogleAuthState> {
   final AuthService authService;
 	GoogleAuthCubit(this.authService) : super(GoogleAuthInitial());
 	
-	Future<void> loadInitialData() async {
+	Future<void> gLogin() async {
     emit(GoogleAuthLoading());
 
 		try {

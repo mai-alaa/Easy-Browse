@@ -24,6 +24,7 @@ dependencies:
   bloc: ^9.1.0
   flutter_bloc: ^9.1.1
   fluttertoast: ^9.0.0
+  flutter_facebook_auth: ^6.0.0
 
 
 

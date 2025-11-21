@@ -1,3 +1,5 @@
+import 'package:easy_browse/core/extentions/int_extentions.dart';
+import 'package:easy_browse/core/utils/common_helper.dart';
 import 'package:easy_browse/core/utils/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -7,12 +9,13 @@ class CustomButton extends StatelessWidget {
   final Color color;
   final Color textColor;
   final IconData icon;
-  const CustomButton({super.key, required this.text, required this.onPressed, required this.color, required this.textColor, required this.icon});
+  final bool isLoading;
+  const CustomButton({super.key, required this.text, required this.onPressed, required this.color, required this.textColor, required this.icon, this.isLoading = false});
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onPressed,
+      onTap: isLoading? null : onPressed,
       child: Container(
         width: double.infinity,
         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
@@ -20,11 +23,11 @@ class CustomButton extends StatelessWidget {
           color: color,
           borderRadius: BorderRadius.circular(8),
         ),
-        child: Row(
+        child: isLoading ? showLoading(context,Colors.white,16): Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(icon,color: kBackgroundColor,),
-            const SizedBox(width: 8),
+            8.toWidth,
             Text(
               text,
               style: TextStyle(

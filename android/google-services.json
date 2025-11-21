@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "809038640860",
+    "project_id": "easy-browse-5ffbe",
+    "storage_bucket": "easy-browse-5ffbe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809038640860:android:a9863905e15478d32de619",
+        "android_client_info": {
+          "package_name": "com.mai.easy_browse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2Bm7Yqt6iCx5VZQ9gE89ES1pQP8QXv6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

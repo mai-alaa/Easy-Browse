@@ -1,5 +1,5 @@
 import 'package:easy_browse/features/login/presentation/screens/login_screen.dart';
-import 'package:easy_browse/features/settings/screens/settings_screen.dart';
+import 'package:easy_browse/features/settings/presentation/screens/settings_screen.dart';
 import 'package:flutter/material.dart';
 
 class  AppRouter {

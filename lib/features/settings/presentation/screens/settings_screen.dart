@@ -1,7 +1,8 @@
 import 'package:easy_browse/core/extentions/int_extentions.dart';
 import 'package:easy_browse/core/utils/constants.dart';
-import 'package:easy_browse/features/settings/widgets/custom_txt_form.dart';
-import 'package:easy_browse/features/settings/widgets/submit_button.dart';
+import 'package:easy_browse/features/settings/presentation/widgets/custom_txt_form.dart';
+import 'package:easy_browse/features/settings/presentation/widgets/scan_devices_dropdown.dart';
+import 'package:easy_browse/features/settings/presentation/widgets/submit_button.dart';
 import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
@@ -25,8 +26,8 @@ class SettingsScreen extends StatelessWidget {
           children: [
             CustomTextFormFeiled(text: 'Enter The URL', controller: controller),
             10.toHeight,
-            
-        
+            ScanDevices()
+
             
           ],
         ),
@@ -34,3 +35,4 @@ class SettingsScreen extends StatelessWidget {
     );
   }
 }
+

@@ -3,6 +3,7 @@ import 'package:easy_browse/core/utils/screen_size.dart';
 import 'package:easy_browse/features/login/data/datasources/google_auth.dart';
 import 'package:easy_browse/features/login/presentation/cubit/facebook_auth/facebook_auth_cubit.dart';
 import 'package:easy_browse/features/login/presentation/cubit/google_auth/google_auth_cubit.dart';
+import 'package:easy_browse/features/settings/presentation/cubits/scan_devices/scan_devices_cubit.dart';
 import 'package:easy_browse/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -30,6 +31,9 @@ class EasyBrowse extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => FacebookAuthCubit( authService ),
+        ),
+        BlocProvider(
+          create: (context) => DeviceCubit(),
         ),
     
 

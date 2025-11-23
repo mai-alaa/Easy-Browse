@@ -23,7 +23,6 @@ Key highlights:
 - [Testing](#testing)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 - [Maintainers / Contact](#maintainers--contact)
 
 ---
@@ -154,19 +153,9 @@ Contributions are welcome!
 - Fork the repo, create a feature branch, and submit a pull request
 - Follow existing code style and include tests where applicable
 
-## License
-
-No `LICENSE` file was found in the repository. Add a license file (for example, `MIT`) if you intend to allow reuse. Until a LICENSE is added, the repository has no explicit open-source license.
 
 ## Maintainers / Contact
 
 - Maintainer: `mai-alaa` (GitHub: https://github.com/mai-alaa)
 
----
 
-If you'd like, I can:
-- add example screenshots under `docs/screenshots/` and wire them into the README
-- add a recommended `LICENSE` (MIT) and create the `LICENSE` file
-- create a short contributing guide `CONTRIBUTING.md`
-
-Thank you for building Easy Browse — let me know what to add next!
